@@ -8,10 +8,8 @@ const videoList = JSON.parse(
 
 router.get("/:videoid", (req, res) => {
   const videoid = req.params.videoid;
-  console.log(videoid);
 
   for (elem in videoList) {
-    console.log(videoList[elem].id);
     if (videoList[elem].id == videoid) {
       res.send(videoList[elem]);
     }
