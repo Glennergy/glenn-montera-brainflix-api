@@ -24,6 +24,7 @@ function Video(title, description) {
   this.image = "http://localhost:8080/public/images/Upload-video-preview.jpg";
   this.description = description;
   this.views = 0;
+  this.likes = 0;
   this.duration = "1:30";
   this.video = "https://project-2-api.herokuapp.com/stream";
   this.timestamp = new Date();
